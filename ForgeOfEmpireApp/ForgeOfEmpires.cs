@@ -22,7 +22,7 @@ namespace ForgeOfEmpireApp
         {
             if (double.TryParse(TBHely.Text, out double szam1))
             {
-                double eredmeny = szam1 * szorzo;
+                double eredmeny = Math.Ceiling(szam1 * szorzo);
                 TBHely.Text = $"Eredmény: {eredmeny}";
             }
             else
