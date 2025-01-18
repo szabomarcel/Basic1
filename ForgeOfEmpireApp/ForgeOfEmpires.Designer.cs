@@ -178,9 +178,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(9, 55);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(196, 13);
+            this.label3.Size = new System.Drawing.Size(199, 13);
             this.label3.TabIndex = 13;
-            this.label3.Text = "Itt a kiszámol 1.9-s helyeket kapod meg:";
+            this.label3.Text = "Itt a kiszámolt 1.9-s helyeket kapod meg:";
             // 
             // TB7
             // 
@@ -265,9 +265,9 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(6, 146);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(358, 13);
+            this.label7.Size = new System.Drawing.Size(370, 13);
             this.label7.TabIndex = 29;
-            this.label7.Text = "Itt a kiszámolt 1.9 helyeket tudod össze adni gomb segítségével kerekitve:\r\n";
+            this.label7.Text = "Itt a kiszámolt 1.9 helyeket tudod össze adni, a gomb segítségével kerekitve:\r\n";
             // 
             // label11
             // 
