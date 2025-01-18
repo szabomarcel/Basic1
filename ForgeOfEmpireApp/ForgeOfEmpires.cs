@@ -162,6 +162,10 @@ namespace ForgeOfEmpireApp
             {
                 btnReset_Click(sender, e);
             }
+            else if(e.KeyCode == Keys.Enter) 
+            {
+                btnFphelyfoglalas_Click(sender, e);
+            }
         }
     }
 }
