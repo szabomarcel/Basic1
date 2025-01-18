@@ -74,11 +74,11 @@
             this.btnFphelyfoglalas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFphelyfoglalas.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnFphelyfoglalas.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnFphelyfoglalas.Location = new System.Drawing.Point(6, 59);
+            this.btnFphelyfoglalas.Location = new System.Drawing.Point(9, 80);
             this.btnFphelyfoglalas.Name = "btnFphelyfoglalas";
             this.btnFphelyfoglalas.Size = new System.Drawing.Size(203, 23);
             this.btnFphelyfoglalas.TabIndex = 0;
-            this.btnFphelyfoglalas.Text = "Fp Helyfoglalás";
+            this.btnFphelyfoglalas.Text = "Fp*1.9";
             this.btnFphelyfoglalas.UseVisualStyleBackColor = false;
             this.btnFphelyfoglalas.Click += new System.EventHandler(this.btnFphelyfoglalas_Click);
             // 
@@ -92,7 +92,7 @@
             this.btnSajat.Name = "btnSajat";
             this.btnSajat.Size = new System.Drawing.Size(551, 23);
             this.btnSajat.TabIndex = 1;
-            this.btnSajat.Text = "Saját nevi fp hely számítás";
+            this.btnSajat.Text = "1. - 5. hely ×1.9";
             this.btnSajat.UseVisualStyleBackColor = false;
             this.btnSajat.Click += new System.EventHandler(this.btnSajat_Click);
             // 
@@ -116,7 +116,7 @@
             this.btnKivonas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnKivonas.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnKivonas.ForeColor = System.Drawing.Color.Black;
-            this.btnKivonas.Location = new System.Drawing.Point(7, 88);
+            this.btnKivonas.Location = new System.Drawing.Point(8, 102);
             this.btnKivonas.Name = "btnKivonas";
             this.btnKivonas.Size = new System.Drawing.Size(321, 23);
             this.btnKivonas.TabIndex = 3;
@@ -161,7 +161,7 @@
             // 
             // TBHely
             // 
-            this.TBHely.Location = new System.Drawing.Point(6, 32);
+            this.TBHely.Location = new System.Drawing.Point(9, 54);
             this.TBHely.Name = "TBHely";
             this.TBHely.Size = new System.Drawing.Size(203, 20);
             this.TBHely.TabIndex = 9;
@@ -178,9 +178,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(9, 55);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 13);
+            this.label3.Size = new System.Drawing.Size(196, 13);
             this.label3.TabIndex = 13;
-            this.label3.Text = "Kiszámol helyek:";
+            this.label3.Text = "Itt a kiszámol 1.9-s helyeket kapod meg:";
             // 
             // TB7
             // 
@@ -221,8 +221,8 @@
             this.groupBox1.Size = new System.Drawing.Size(221, 109);
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Másoknál nevi Fp hely foglalás 1. - 5.-ig \"random\"(Ez nem a sajátodhoz tartozik):" +
-    "";
+            this.groupBox1.Text = "Itt helyet viszel másoknál ×1.9-s szorzattal. És elég beírni a helyet amelyiket v" +
+    "iszed (\"pl.: 1500 × 1.9\") stb..";
             // 
             // groupBox2
             // 
@@ -258,17 +258,16 @@
             this.groupBox2.Size = new System.Drawing.Size(565, 198);
             this.groupBox2.TabIndex = 20;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Saját nevid fp hely kiszámítása, hogy majd mennyi őneröt rakj bele a kiszámolás u" +
-    "tán:";
+            this.groupBox2.Text = "Itt a saját nevid helyit tudod beírni elsp sorba.";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(6, 146);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(209, 13);
+            this.label7.Size = new System.Drawing.Size(358, 13);
             this.label7.TabIndex = 29;
-            this.label7.Text = "Kiszámolt 1.9 saját nevid helyeit adja össze";
+            this.label7.Text = "Itt a kiszámolt 1.9 helyeket tudod össze adni gomb segítségével kerekitve:\r\n";
             // 
             // label11
             // 
@@ -377,24 +376,24 @@
             this.groupBox3.ForeColor = System.Drawing.Color.LavenderBlush;
             this.groupBox3.Location = new System.Drawing.Point(236, 216);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(333, 144);
+            this.groupBox3.Size = new System.Drawing.Size(333, 159);
             this.groupBox3.TabIndex = 21;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Kivonás saját nevid fp-jével az összeadot fp helyekkel.";
+            this.groupBox3.Text = "Itt ki tudod vontatni a nevid össz pontjából az őnerőt:";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(5, 26);
+            this.label12.Location = new System.Drawing.Point(6, 33);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(322, 26);
+            this.label12.Size = new System.Drawing.Size(301, 39);
             this.label12.TabIndex = 7;
-            this.label12.Text = "A felső rublikába pedig a nevid összes fp-jét kell belírni, \r\nhogy ki tudja számo" +
-    "lni a program mennyi az őnerő, amit be kell rakj.";
+            this.label12.Text = "A felső rublikába pedig a nevid fp-jét kell belírni \r\n(\"pl.: 6336 fp pont saját n" +
+    "evid\"), és elég rá lattintani a gombra, \r\nés ki van számolva az őnerőd:";
             // 
             // TBVegkiszamolt
             // 
-            this.TBVegkiszamolt.Location = new System.Drawing.Point(7, 117);
+            this.TBVegkiszamolt.Location = new System.Drawing.Point(8, 131);
             this.TBVegkiszamolt.Name = "TBVegkiszamolt";
             this.TBVegkiszamolt.Size = new System.Drawing.Size(321, 20);
             this.TBVegkiszamolt.TabIndex = 6;
@@ -402,7 +401,7 @@
             // TBNevifp
             // 
             this.TBNevifp.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TBNevifp.Location = new System.Drawing.Point(8, 62);
+            this.TBNevifp.Location = new System.Drawing.Point(8, 76);
             this.TBNevifp.Name = "TBNevifp";
             this.TBNevifp.Size = new System.Drawing.Size(319, 20);
             this.TBNevifp.TabIndex = 4;
@@ -424,7 +423,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Firebrick;
-            this.ClientSize = new System.Drawing.Size(574, 365);
+            this.ClientSize = new System.Drawing.Size(574, 379);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
