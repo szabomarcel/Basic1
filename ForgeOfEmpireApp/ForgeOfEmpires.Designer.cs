@@ -62,6 +62,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.TBVegkiszamolt = new System.Windows.Forms.TextBox();
             this.TBNevifp = new System.Windows.Forms.TextBox();
+            this.btnReset = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -406,12 +407,25 @@
             this.TBNevifp.Size = new System.Drawing.Size(319, 20);
             this.TBNevifp.TabIndex = 4;
             // 
+            // btnReset
+            // 
+            this.btnReset.BackColor = System.Drawing.Color.Olive;
+            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnReset.Location = new System.Drawing.Point(4, 330);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(221, 23);
+            this.btnReset.TabIndex = 22;
+            this.btnReset.Text = "RESET";
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
             // FOE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Firebrick;
             this.ClientSize = new System.Drawing.Size(574, 365);
+            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -465,6 +479,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button btnReset;
     }
 }
 

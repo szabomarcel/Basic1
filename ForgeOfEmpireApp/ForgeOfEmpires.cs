@@ -16,6 +16,8 @@ namespace ForgeOfEmpireApp
         public FOE()
         {
             InitializeComponent();
+            this.KeyPreview = true;
+            this.KeyDown += new KeyEventHandler(Form_KeyDown);
         } 
 
         private void btnFphelyfoglalas_Click(object sender, EventArgs e)
@@ -120,6 +122,45 @@ namespace ForgeOfEmpireApp
             if(!validInput)
             {
                 MessageBox.Show("Hibás adatbevitel! Kérlek, számot adj meg.");
+            }
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            TBHely.Clear();
+            TBNevifp.Clear();
+            TBVegkiszamolt.Clear();
+            TB1.Clear();
+            TB2.Clear();
+            TB3.Clear();
+            TB4.Clear();
+            TB5.Clear();
+            TB6.Clear();
+            TB7.Clear();
+            TB8.Clear();
+            TB9.Clear();
+            TB10.Clear();
+            TB11.Clear();
+            osszegzettEredmeny = 0;
+        }
+
+        private void Form_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Multiply)
+            {
+                btnSajat_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.Add)
+            {
+                btnOsszead_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.Subtract)
+            {
+                btnKivonas_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.Delete)
+            {
+                btnReset_Click(sender, e);
             }
         }
     }
